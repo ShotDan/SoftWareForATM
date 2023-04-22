@@ -56,14 +56,7 @@ namespace SoftWareForATM
 
         public bool checkEnoughMoney(int desiredSum)
         {
-            bool isEnoughMoney = false;
-
-            if (_currentBankCard.Money >= desiredSum)
-            {
-                isEnoughMoney = true;
-            }
-            
-            return isEnoughMoney;
+            return _currentBankCard.Money >= desiredSum;
         }
 
         public void WithdrawCash(int desiredSum)
